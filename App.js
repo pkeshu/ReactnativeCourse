@@ -15,7 +15,10 @@ export default class App extends Component {
         places: prevStat.places.concat({
           key: Math.random(),
           name: placeName,
-          image: placeImage
+          image: {
+            uri:'https://en.wikipedia.org/wiki/Google_Lens#/media/File:Google_Lens_-_new_logo.png'
+          }
+          // image:placeImage
         })
       };
     });
